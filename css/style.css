@@ -25,7 +25,6 @@ h2 {
   font-size: 24px;
   color: #999999;
   line-height: 29px;
-  padding: 10px;
 }
 
 h3 {
@@ -48,12 +47,28 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+.online-text {
+  font-style: italic; 
+  font-size: 18px;
+  text-align: left;
+  color: #999999;
+  line-height: 9px;
+  padding-top: 25px;
+  padding-left: 0%;
+  padding-right: 5%;
+}
+
+.url-text {
+  font-size: 12px;
+  padding-top: 0px;
+  color: blue;
+}
 
 .date-text {
   font-style: italic;
   font-size: 14px;
   color: #999999;
-  line-height: 16px;
+/*line-height: 16px;*/
   float: left;
 }
 
@@ -63,7 +78,6 @@ h2, h3, h4, h5 {
   color: #999999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -167,7 +181,8 @@ span {
 }
 
 #letsConnect {
-  text-align: center;
+  text-align: center
+  background-color: ;
 }
 
 @media only screen and (max-width: 1024px) {

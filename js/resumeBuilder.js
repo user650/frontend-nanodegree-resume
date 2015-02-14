@@ -114,11 +114,11 @@ var projects = {
 			$(".project-entry:last").append(formattedProjectDesc);
 			var formattedProjectImage = HTMLprojectImage.replace("%data%",projects.projects[p].images[0]);
 			$(".project-entry:last").append(formattedProjectImage);
-			var formattedProjectImage = HTMLprojectImage.replace("%data%",projects.projects[p].images[1]);
+			formattedProjectImage = HTMLprojectImage.replace("%data%",projects.projects[p].images[1]);
 			$(".project-entry:last").append(formattedProjectImage);
 		}
 	}
-}
+};
 projects.display();
 
 //Education using the JSON notation
@@ -170,13 +170,13 @@ var education = {
 				var formattedSchoolMajor = HTMLschoolMajor.replace("%data%",education.schools[i].majors[j]);
 				$(".education-entry:last").append(formattedSchoolMajor);
 			}
-		};
+		}
   		$(".education-entry:last").append(HTMLonlineClasses);
 		for (i in education.online_course) {
 			var formattedTitle = HTMLonlineTitle.replace("%data%",education.online_course[i].title);
 			var formattedSchool = HTMLonlineSchool.replace("%data%",education.online_course[i].school);
 			var formattedDates = HTMLonlineDates.replace("%data%",education.online_course[i].date);
-			var formattedURL = HTMLonlineURL.replace("%data%",education.online_course[i].URL);
+			var formattedURL = HTMLonlineURL.replace(/%data%/g,education.online_course[i].URL);
 			$(".education-entry:last").append(formattedTitle + formattedSchool + formattedDates + formattedURL);
 		}
 	}
